@@ -139,10 +139,29 @@ body{
     margin: 0 0 3rem 0;
     transition: 0.5s;
 }
-
 .rating-state-start .submit:hover{
     color: var(--submit-hover-color);
     background-color: var(--submit-hover-bg-color);
+}
+
+/* ANIMATION SUBMIT */
+
+@keyframes hiddenRatingSection {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes visibleRatingSection {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* RATING SECTION END */
