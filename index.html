@@ -23,47 +23,58 @@
 </head>
 
 <body>
+  <main>
+    <!-- Rating state start -->
+    <section class="rating-state-start">
+      <img src="images/icon-star.svg" alt="">
 
-  <!-- Rating state start -->
-  <section class="rating-state-start">
-    <img src="images/icon-star.svg" alt="star">
+      <h1>How did we do?</h1>
 
-    <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
 
-    <p>
-      Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!
-    </p>
+      <form class="rating" name="ratingForm" method="get">
+        <fieldset>
+          <legend class="hidden">Choose your rating</legend>
+          <input id="rating_1" type="radio" name="rating" value="1">
+          <label for="rating_1">1</label>
+          <input id="rating_2" type="radio" name="rating" value="2">
+          <label for="rating_2">2</label>
+          <input id="rating_3" type="radio" name="rating" value="3">
+          <label for="rating_3">3</label>
+          <input id="rating_4" type="radio" name="rating" value="4">
+          <label for="rating_4">4</label>
+          <input id="rating_5" type="radio" name="rating" value="5">
+          <label for="rating_5">5</label>
 
-    <ul class="rating">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-    </ul>
+          <input class="submit" type="submit" value="Submit">
+        </fieldset>
+      </form>
 
-    <button class="submit">Submit</button>
-  </section>
+      <!-- <button class="submit">Submit</button> -->
+    </section>
 
-  <!-- Rating state end -->
+    <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+    <!-- Thank you state start -->
 
-  <section class="thank-you-state-rating hidden">
-    <img src="images/illustration-thank-you.svg" alt="Thank for help illustration">
+    <section class="thank-you-state-rating hidden">
+      <img src="images/illustration-thank-you.svg" alt="">
 
-    <h2>You selected <span class="submit-rating">0</span> out of 5</h2>
+      <h2>You selected <span class="submit-rating">0</span> out of 5</h2>
 
-    <h1>Thank you!</h1>
+      <h1>Thank you!</h1>
 
-    <p>
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!
-    </p>
-  </section>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </section>
 
-  <!-- Thank you state end -->
+    <!-- Thank you state end -->
+  </main>
 
 
   <footer class="attribution">

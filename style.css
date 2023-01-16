@@ -95,14 +95,27 @@ body{
 
 .rating-state-start .rating{
     width: 90%;
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-state-start .rating fieldset{
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    border: none;
 }
 
-.rating-state-start .rating li{
+.rating-state-start .rating input[type="radio"]{
+    display: none;
+}
+
+.rating-state-start .rating label{
     background-color: var(--rating-li-bg-color);
     color: var(--rating-li-color);
     display: block;
@@ -113,11 +126,11 @@ body{
     transition: 0.5s;
 }
 
-.rating-state-start .rating li:hover{
+.rating-state-start .rating label:hover{
     background-color: var(--rating-li-hover-bg-color);
 }
 
-.is-selected-rating{
+.rating-state-start .rating input:checked + label{
     background-color: var(--rating-li-hover-bg-color) !important;
     opacity: 1 !important;
 }
